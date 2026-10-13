@@ -1,0 +1,30 @@
+:root { color-scheme: light; --ink: #17332c; --muted: #52665f; --paper: #fcfcf8; --line: #dce4df; --accent: #21634b; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.65; }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid #c5862b; outline-offset: 5px; }
+.site-header, main, footer { width: min(100% - 3rem, 920px); margin-inline: auto; }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 1.8rem; border-bottom: 1px solid var(--line); }
+.wordmark { color: var(--ink); text-decoration: none; font-size: 1.65rem; font-weight: 750; letter-spacing: -.055em; }
+.wordmark span { color: var(--accent); }
+nav { font-size: .92rem; }
+main { max-width: 800px; padding-block: 3.5rem; }
+.eyebrow { margin: 0 0 1rem; color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+h1 { margin: 0 0 1.5rem; font-size: clamp(2.15rem, 5.5vw, 3.7rem); font-weight: 650; line-height: 1.1; letter-spacing: -.055em; }
+h2 { margin: 0 0 .7rem; font-size: 1.35rem; font-weight: 650; line-height: 1.3; letter-spacing: -.025em; }
+p { margin: 0 0 1rem; }
+.intro { max-width: 740px; color: var(--muted); font-size: 1.16rem; line-height: 1.7; }
+section { margin-top: 2.7rem; }
+.services { margin-block: 1.8rem; border-top: 1px solid var(--line); }
+.services div { display: grid; grid-template-columns: 120px 1fr; gap: 1rem; padding-block: 1rem; border-bottom: 1px solid var(--line); }
+dt { font-weight: 650; }
+dd { margin: 0; color: var(--muted); }
+.notice { padding: 1.6rem; background: #edf3ed; border-radius: 10px; }
+.notice p { margin-bottom: 0; }
+.date { color: var(--muted); font-size: .9rem; }
+.privacy { max-width: 740px; }
+.privacy h1 { font-size: clamp(2.3rem, 5vw, 3.3rem); }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--line); padding-block: 1.5rem; color: var(--muted); font-size: .85rem; }
+footer p { margin: 0; }
+@media (max-width: 520px) { body { font-size: 16px; } .site-header, main, footer { width: calc(100% - 2rem); } main { padding-block: 2.5rem; } .services div { grid-template-columns: 1fr; gap: .15rem; } }
